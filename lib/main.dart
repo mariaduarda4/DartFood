@@ -46,7 +46,7 @@ class DartFood extends StatelessWidget {
             ), //padding
 
             Container(
-              height: 150,
+              height: 130,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
