@@ -18,10 +18,11 @@ class DartFood extends StatelessWidget {
             'Restaurantes',
             style: TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w700,
+              fontSize: 16,
             ),
           ),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.black,
         ),
         body: ListView(
           children: <Widget>[
