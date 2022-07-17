@@ -360,10 +360,9 @@ class DartFood extends StatelessWidget {
                   ),
                   Expanded(
                     child: ListView(
-                      scrollDirection: Axis.vertical,
+                      scrollDirection: Axis.horizontal,
                       children: <Widget>[
                         Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             ClipRRect(
                               borderRadius: BorderRadius.circular(4),
