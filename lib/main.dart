@@ -19,7 +19,7 @@ class DartFood extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w700,
-              fontSize: 14,
+              fontSize: 13,
             ),
           ),
           backgroundColor: Colors.black,
