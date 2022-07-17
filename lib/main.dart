@@ -347,131 +347,38 @@ class DartFood extends StatelessWidget {
               color: Colors.grey.shade100,
             ),
             Container(
-              height: 130,
-              padding: const EdgeInsets.symmetric(horizontal: 24.0),
-              child: Row(
-                children: [
-                  Text(
-                    'Lojas',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Expanded(
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
+              width: double.maxFinite,
+              height: 98,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: <Widget>[
+                    Row(
                       children: <Widget>[
-                        Column(
-                          children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(4),
-                              child: Image(
-                                image: NetworkImage('https://th.bing.com/th/id/R.dee1808face6b5993b52ce3adfa7db08?rik=2MYUDsyhyGJprg&riu=http%3a%2f%2fi.mlcdn.com.br%2fportaldalu%2ffotosconteudo%2f79791.jpg&ehk=xzVbRq81DRtzDETquwlV0gVuTxol94dR7XkRd1D9S%2bw%3d&risl=&pid=ImgRaw&r=0'),
-                                height: 70,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            Text(
-                              'Padarias',
-                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
-                            ),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: Image(
+                            width: 50,
+                            height: 50,
+                            image: NetworkImage('http://alice-williams.com/wp-content/uploads/2018/03/Alice-Williams-bio-photo-cropped-768x697.jpg'),
+                          ),
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(4),
-                              child: Image(
-                                image: NetworkImage('https://veja.abril.com.br/wp-content/uploads/2017/10/sorvete-de-baunilha-chocolate-belga-e-amarena-na-casquinha_31.jpg?quality=70&strip=all&resize=360'),
-                                height: 70,
-                              ),
+                        Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
+                          Text(
+                            'Peddro',
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'Pedro: Eu acho vc feia...',
+                            style: TextStyle(
+                              fontSize: 14,
                             ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            Text(
-                              'Sorvetes',
-                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(4),
-                              child: Image(
-                                image: NetworkImage('https://static.clubedaanamariabraga.com.br/wp-content/uploads/2019/01/como-fazer-feijoada-3.jpeg'),
-                                height: 70,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            Text(
-                              'Brasileira',
-                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(4),
-                              child: Image(
-                                image: NetworkImage('https://th.bing.com/th/id/R.8f924d66dce626dbddef2e696c46a905?rik=TyxZHsnrNedzCQ&pid=ImgRaw&r=0'),
-                                height: 70,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            Text(
-                              'Marmita',
-                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(4),
-                              child: Image(
-                                image: NetworkImage('https://th.bing.com/th/id/R.b676af324588153ce64f65ebb867ab3a?rik=5ROcbOnT7L%2fcHg&pid=ImgRaw&r=0'),
-                                height: 70,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            Text(
-                              'Hamburguers',
-                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
-                            ),
-                          ],
-                        ),
+                          ),
+                        ]),
                       ],
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ], //widget
