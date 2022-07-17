@@ -190,7 +190,7 @@ class DartFood extends StatelessWidget {
               color: Colors.grey.shade100,
             ),
             Container(
-              height: 150,
+              height: 130,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
