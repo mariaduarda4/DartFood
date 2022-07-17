@@ -17,7 +17,7 @@ class DartFood extends StatelessWidget {
           title: Text(
             'Restaurantes',
             style: TextStyle(
-              color: Colors.white,
+              color: Colors.red,
               fontWeight: FontWeight.w700,
               fontSize: 16,
             ),
