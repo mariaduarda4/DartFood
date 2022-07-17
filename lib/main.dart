@@ -109,28 +109,6 @@ class DartFood extends StatelessWidget {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(4),
                               child: Image(
-                                image: NetworkImage('https://th.bing.com/th/id/R.0e9d842924111a685f3bf85fa24082c0?rik=3OIbGX%2bcXyE5iw&pid=ImgRaw&r=0'),
-                                height: 70,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            Text(
-                              'Sobremesas',
-                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(4),
-                              child: Image(
                                 image: NetworkImage('https://static.clubedaanamariabraga.com.br/wp-content/uploads/2019/01/como-fazer-feijoada-3.jpeg'),
                                 height: 70,
                               ),
