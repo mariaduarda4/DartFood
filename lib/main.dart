@@ -37,8 +37,9 @@ class DartFood extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'Ordenar     Para retirar       Entrega grátis',
+                    'Ordenar         Para retirar       Entrega grátis',
                     style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w700, fontSize: 12),
+                    backgroundColor: Colors.yellow,
                   ),
                   Row(
                     children: <Widget>[
