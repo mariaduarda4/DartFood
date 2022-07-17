@@ -15,11 +15,11 @@ class DartFood extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Restaurantes bebidas pizzas saladas sobremesas',
+            'Restaurantes  bebidas  pizzas  saladas  sobremesas',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w700,
-              fontSize: 12,
+              fontSize: 14,
             ),
           ),
           backgroundColor: Colors.black,
