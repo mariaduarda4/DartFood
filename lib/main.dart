@@ -39,7 +39,6 @@ class DartFood extends StatelessWidget {
                   Text(
                     'Ordenar         Para retirar       Entrega grátis',
                     style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w700, fontSize: 12),
-                    backgroundColor: Colors.black,
                   ),
                   Row(
                     children: <Widget>[
