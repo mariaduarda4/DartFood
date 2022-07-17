@@ -40,7 +40,6 @@ class DartFood extends StatelessWidget {
                     'Ordenar         Para retirar       Entrega grátis',
                     style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
                   ),
-                  backgroundColor: Colors.yellow,
                   //row
                 ], //widget
               ), //column
@@ -347,16 +346,43 @@ class DartFood extends StatelessWidget {
               height: 10,
               color: Colors.grey.shade100,
             ),
-            Container(
-              padding: EdgeInsets.all(12),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(4),
-                child: Image(
-                  image: NetworkImage('https://thumbs.dreamstime.com/b/faixa-de-desconto-italiano-sobre-comida-em-fundo-escuro-conceito-menu-pizza-com-pepperoni-margherita-fatias-realistas-cortantes-186380456.jpg'),
-                  height: 70,
-                ),
-              ),
-            ),
+           Container(
+              height: 150,
+              padding: EdgeInsets.only(top: 12, left: 12),
+              alignment: Alignment.topLeft,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'Categorias',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Expanded(
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(4),
+                              child: Image(
+                                image: NetworkImage('https://i.pinimg.com/originals/50/61/c5/5061c5d009bd69e9c5d6e2371f5635b3.jpg'),
+                                height: 70,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 7,
+                            ),
+                            Text(
+                              'Pizzas',
+                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
+                            ),
+                          ],
+                        ),
           ], //widget
         ),
       ),
