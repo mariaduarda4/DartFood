@@ -38,7 +38,7 @@ class DartFood extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     'Ordenar         Para retirar       Entrega grátis',
-                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w700, fontSize: 12),
+                    style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
                   ),
                   //row
                 ], //widget
@@ -52,10 +52,6 @@ class DartFood extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
-                    'Categorias',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
-                  ),
                   SizedBox(
                     height: 10,
                   ),
@@ -69,7 +65,7 @@ class DartFood extends StatelessWidget {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(4),
                               child: Image(
-                                image: NetworkImage('https://i.pinimg.com/originals/50/61/c5/5061c5d009bd69e9c5d6e2371f5635b3.jpg'),
+                                image: NetworkImage('https://th.bing.com/th/id/R.dee1808face6b5993b52ce3adfa7db08?rik=2MYUDsyhyGJprg&riu=http%3a%2f%2fi.mlcdn.com.br%2fportaldalu%2ffotosconteudo%2f79791.jpg&ehk=xzVbRq81DRtzDETquwlV0gVuTxol94dR7XkRd1D9S%2bw%3d&risl=&pid=ImgRaw&r=0'),
                                 height: 70,
                               ),
                             ),
@@ -77,7 +73,7 @@ class DartFood extends StatelessWidget {
                               height: 7,
                             ),
                             Text(
-                              'Pizzas',
+                              'Padarias',
                               style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
                             ),
                           ],
@@ -91,7 +87,7 @@ class DartFood extends StatelessWidget {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(4),
                               child: Image(
-                                image: NetworkImage('https://th.bing.com/th/id/R.75c3f63ba0330cad79eea4124b06cca7?rik=aF%2f4L8J9v6yjRw&riu=http%3a%2f%2ffrigorificoarvoredo.com.br%2fblog%2fwp-content%2fuploads%2f2020%2f08%2fiStock-617759204.png&ehk=qUbx3KnCPV5DCHxk2QGx0eTRENqUm8sohD5uedaFwOk%3d&risl=&pid=ImgRaw&r=0'),
+                                image: NetworkImage('https://veja.abril.com.br/wp-content/uploads/2017/10/sorvete-de-baunilha-chocolate-belga-e-amarena-na-casquinha_31.jpg?quality=70&strip=all&resize=360'),
                                 height: 70,
                               ),
                             ),
@@ -99,7 +95,7 @@ class DartFood extends StatelessWidget {
                               height: 7,
                             ),
                             Text(
-                              'Lanches',
+                              'Sorvetes',
                               style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
                             ),
                           ],
@@ -135,7 +131,7 @@ class DartFood extends StatelessWidget {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(4),
                               child: Image(
-                                image: NetworkImage('https://th.bing.com/th/id/R.20f1fa2bb3c9ace5ec4ef037091a8ca8?rik=9QqE2RXcmDzDPg&riu=http%3a%2f%2fszscomunicacao.com.br%2fwp-content%2fuploads%2fsushi.jpg&ehk=JuPqdsRL0ez7omR5Rwet6g5tcMqjAKZRvPHmIi5o6r0%3d&risl=&pid=ImgRaw&r=0'),
+                                image: NetworkImage('https://static.clubedaanamariabraga.com.br/wp-content/uploads/2019/01/como-fazer-feijoada-3.jpeg'),
                                 height: 70,
                               ),
                             ),
@@ -143,13 +139,54 @@ class DartFood extends StatelessWidget {
                               height: 7,
                             ),
                             Text(
-                              'Comida japonesa',
+                              'Brasileira',
                               style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
                             ),
                           ],
                         ),
                         SizedBox(
                           width: 10,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(4),
+                              child: Image(
+                                image: NetworkImage('https://th.bing.com/th/id/R.8f924d66dce626dbddef2e696c46a905?rik=TyxZHsnrNedzCQ&pid=ImgRaw&r=0'),
+                                height: 70,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 7,
+                            ),
+                            Text(
+                              'Marmita',
+                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(4),
+                              child: Image(
+                                image: NetworkImage('https://th.bing.com/th/id/R.b676af324588153ce64f65ebb867ab3a?rik=5ROcbOnT7L%2fcHg&pid=ImgRaw&r=0'),
+                                height: 70,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 7,
+                            ),
+                            Text(
+                              'Hamburguers',
+                              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black54),
+                            ),
+                          ],
                         ),
                       ],
                     ),
