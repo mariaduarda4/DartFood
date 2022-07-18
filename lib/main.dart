@@ -365,11 +365,12 @@ class DartFood extends StatelessWidget {
                         ),
                         Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
                           Text(
-                            'Peddro',
+                            'McDonalds - Pátio shop.Arapiraca',
                             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            'Pedro: Eu acho vc feia...',
+                            ' Lanches, 42-52 min  R$4,99    1,3 Km',
+                            
                             style: TextStyle(
                               fontSize: 14,
                             ),
