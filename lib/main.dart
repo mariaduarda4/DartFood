@@ -353,6 +353,10 @@ class DartFood extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: <Widget>[
+                    Text(
+                      'Lojas',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                    ),
                     Row(
                       children: <Widget>[
                         Padding(
@@ -382,14 +386,6 @@ class DartFood extends StatelessWidget {
               ),
             ),
           ], //widget
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          elevation: 4,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-            ),
-          ],
         ),
       ),
     );
