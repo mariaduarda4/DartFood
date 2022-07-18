@@ -374,7 +374,7 @@ class DartFood extends StatelessWidget {
                             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            ' Lanches, 42-52 min  RS 4,99    1,3 Km',
+                            ' Lanches    42-52 min    RS 4,99    1,3 Km',
                             style: TextStyle(
                               fontSize: 14,
                             ),
