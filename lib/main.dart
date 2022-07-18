@@ -383,6 +383,14 @@ class DartFood extends StatelessWidget {
             ),
           ], //widget
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          elevation: 4,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+            ),
+          ],
+        ),
       ),
     );
   }
