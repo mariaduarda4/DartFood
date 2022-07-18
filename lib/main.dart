@@ -355,8 +355,8 @@ class DartFood extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Restaurantes Famosos',
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
+                      'Lojas',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                     ),
                     Row(
                       children: <Widget>[
