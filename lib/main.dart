@@ -53,7 +53,7 @@ class DartFood extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   SizedBox(
-                    height: 8,
+                    height: 12,
                   ),
                   Expanded(
                     child: ListView(
@@ -70,7 +70,7 @@ class DartFood extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              height: 6,
+                              height: 7,
                             ),
                             Text(
                               'Padarias',
@@ -92,7 +92,7 @@ class DartFood extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              height: 6,
+                              height: 7,
                             ),
                             Text(
                               'Sorvetes',
@@ -356,7 +356,7 @@ class DartFood extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       'Lojas',
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                     ),
                     Row(
                       children: <Widget>[
