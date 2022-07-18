@@ -356,7 +356,7 @@ class DartFood extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       'Lojas',
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                     ),
                     Row(
                       children: <Widget>[
