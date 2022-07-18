@@ -352,7 +352,12 @@ class DartFood extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
+                    Text(
+                      'Restaurantes Famosos',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
+                    ),
                     Row(
                       children: <Widget>[
                         Padding(
