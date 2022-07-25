@@ -25,6 +25,30 @@ class DartFood extends StatelessWidget {
           ),
           backgroundColor: Colors.black,
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          showUnselectedLabels: true,
+          unselectedItemColor: Colors.grey,
+          selectedItemColor: const Color(0xFFE81F7C),
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.compass),
+              label: 'Destaques',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.bag),
+              label: 'Pacotes',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.person),
+              label: 'Perfil',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.more_horiz),
+              label: 'Mais',
+            ),
+          ],
+        ),
         body: ListView(
           children: <Widget>[
             SizedBox(
@@ -387,50 +411,6 @@ class DartFood extends StatelessWidget {
                 ),
               ),
             ),
-            
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey,
-      appBar: AppBar(
-        centerTitle: false,
-        title: const Text('Pesquisar'),
-        backgroundColor: const Color(0xFF10397B),
-      ),
-      body: pages[selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        showUnselectedLabels: true,
-        unselectedItemColor: Colors.grey,
-        selectedItemColor: const Color(0xFFE81F7C),
-        currentIndex: selectedIndex,
-        onTap: (index) {
-          setState(() {
-            selectedIndex = index;
-          });
-        },
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.compass),
-            label: 'Destaques',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.bag),
-            label: 'Pacotes',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.person),
-            label: 'Perfil',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.more_horiz),
-            label: 'Mais',
-          ),
-        ],
-      ),
-    );
-  }
           ], //widget
         ),
       ),
