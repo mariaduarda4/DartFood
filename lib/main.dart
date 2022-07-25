@@ -386,6 +386,27 @@ class DartFood extends StatelessWidget {
                 ),
               ),
             ),
+            
+ BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.compass),
+            label: 'Destaques',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.bag),
+            label: 'Pacotes',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.person),
+            label: 'Perfil',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.more_horiz),
+            label: 'Mais',
+          ),
+        ],
+      ),
+
+
           ], //widget
         ),
       ),
