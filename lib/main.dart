@@ -387,7 +387,29 @@ class DartFood extends StatelessWidget {
               ),
             ),
             
- BottomNavigationBarItem(
+@override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey,
+      appBar: AppBar(
+        centerTitle: false,
+        title: const Text('Pesquisar'),
+        backgroundColor: const Color(0xFF10397B),
+      ),
+      body: pages[selectedIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        showUnselectedLabels: true,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: const Color(0xFFE81F7C),
+        currentIndex: selectedIndex,
+        onTap: (index) {
+          setState(() {
+            selectedIndex = index;
+          });
+        },
+        items: const [
+          BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.compass),
             label: 'Destaques',
           ),
@@ -405,8 +427,9 @@ class DartFood extends StatelessWidget {
           ),
         ],
       ),
+    );
 
-
+            
           ], //widget
         ),
       ),
