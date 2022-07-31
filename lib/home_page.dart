@@ -1,8 +1,8 @@
-import 'package:dartfood/grid_pacotes.dart';
-import 'package:dartfood/temp_page.dart';
+import 'package:dartfood2/grid_pacotes.dart';
+import 'package:dartfood2/temp_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:dartfood/app.dart';
+import 'package:dartfood2/app.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
