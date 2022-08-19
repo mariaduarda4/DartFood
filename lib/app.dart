@@ -31,7 +31,7 @@ class _DartFoodState extends State<DartFood> {
         body: ListView(
           children: <Widget>[
             Container(
-              height: 10,
+              height: 20,
               color: Colors.yellow,
             ),
             Padding(
@@ -41,18 +41,19 @@ class _DartFoodState extends State<DartFood> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Container(
-              height: 10,
-              color: Colors.yellow,
-            ),
                   Text(
                     'Ordenar         Para retirar         Entrega grátis',
                     style: TextStyle(
                         fontWeight: FontWeight.w500, color: Colors.black54),
-                  ),
-                  //row
-                ], //widget
+                  ), //row
+                ],
+                //widget
               ), //column
+            ),
+
+            Container(
+              height: 10,
+              color: Colors.grey.shade100,
             ), //padding
 
             Container(
