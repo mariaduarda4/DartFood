@@ -200,102 +200,16 @@ class _DartFoodState extends State<DartFood> {
               height: 10,
               color: Colors.grey.shade100,
             ),
-            //Container(
-            // padding: EdgeInsets.all(12),
-            // child: ClipRRect(
-            //  borderRadius: BorderRadius.circular(4),
-            //  child: Image(
-            //   image: NetworkImage('https://th.bing.com/th/id/R.bd34572e1cb5a2d70b49112ac482d438?rik=9NOQDM1fmrz4rA&riu=http%3a%2f%2fpasteldam.com.br%2fwp-content%2fuploads%2f2018%2f07%2fbanner-pratos.png&ehk=xJ9nICZktmoLcJT2ssPY%2b1fyM0nXcNp02iuIbSe0uAU%3d&risl=&pid=ImgRaw&r=0'),
-            //  ),
-            // ),
-            //),// PRESTA ATENÇÃO
-            Padding(
-              padding: const EdgeInsets.only(left: 12),
-              child: Container(
-                height: 130,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: ListView(
-                  padding: EdgeInsets.only(right: 12),
-                  scrollDirection: Axis.horizontal,
-                  children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(8),
-                          child: Image(
-                            image: NetworkImage(
-                                'https://th.bing.com/th/id/R.bd34572e1cb5a2d70b49112ac482d438?rik=9NOQDM1fmrz4rA&riu=http%3a%2f%2fpasteldam.com.br%2fwp-content%2fuploads%2f2018%2f07%2fbanner-pratos.png&ehk=xJ9nICZktmoLcJT2ssPY%2b1fyM0nXcNp02iuIbSe0uAU%3d&risl=&pid=ImgRaw&r=0'),
-                            height: 90,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          'Confira sua entrega grátis na sacola',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black54),
-                        )
-                      ],
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(8),
-                          child: Image(
-                            image: NetworkImage(
-                                'https://img.clasf.com.br/2020/05/14/Designer-Freelance-20200514053914.0435590015.jpg'),
-                            height: 90,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          'A taxa é uma cortesia para você',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black54),
-                        )
-                      ],
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(8),
-                          child: Image(
-                            image: NetworkImage(
-                                'https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto,w_1200,h_630,d_es:cuisines:pizza-5.jpg/v1/es/restaurants/32955.jpg'),
-                            height: 90,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          'No Dart Food temos uma comida gostosa e sem taxas ',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black54),
-                        )
-                      ],
-                    ),
-                  ],
+            Container(
+              padding: EdgeInsets.all(12),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(4),
+                child: Image(
+                  image: NetworkImage(
+                      'https://th.bing.com/th/id/R.bd34572e1cb5a2d70b49112ac482d438?rik=9NOQDM1fmrz4rA&riu=http%3a%2f%2fpasteldam.com.br%2fwp-content%2fuploads%2f2018%2f07%2fbanner-pratos.png&ehk=xJ9nICZktmoLcJT2ssPY%2b1fyM0nXcNp02iuIbSe0uAU%3d&risl=&pid=ImgRaw&r=0'),
                 ),
               ),
-            ),
+            ), // PRESTA ATEN
             Container(
               height: 10,
               color: Colors.grey.shade100,
