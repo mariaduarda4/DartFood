@@ -45,13 +45,11 @@ class _DartFoodState extends State<DartFood> {
                   SizedBox(
                     height: 12,
                   ),
-                  
                 ],
               ),
             ),
             Container(
               height: 150,
-              color: Colors.black,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
