@@ -34,7 +34,6 @@ class _DartFoodState extends State<DartFood> {
               height: 20,
               color: Colors.yellow,
             ),
-
             Container(
               height: 150,
               padding: EdgeInsets.only(top: 12, left: 12),
