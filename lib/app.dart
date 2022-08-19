@@ -19,15 +19,52 @@ class _DartFoodState extends State<DartFood> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'DarFood',
+            'Dart food',
             style: TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.w700,
-              fontSize: 13,
+              fontWeight: FontWeight.bold,
             ),
           ),
+          centerTitle: true,
           backgroundColor: Colors.black,
         ),
+        body: ListView(
+          children: <Widget>[
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 12,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'ENTREGAR EM',
+                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w700, fontSize: 16),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        'Primavera, 11',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      Icon(
+                        Icons.keyboard_arrow_down,
+                        color: Colors.red,
+                      ),
+                    ], //<widget
+                  ), //row
+                ], //widget
+              ), //column
+            ), //padding
+            SizedBox(
+              height: 10,
+            ),
         body: ListView(
           children: <Widget>[
             Container(
