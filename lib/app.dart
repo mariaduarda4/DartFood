@@ -33,6 +33,10 @@ class _DartFoodState extends State<DartFood> {
             Container(
               height: 10,
               color: Colors.yellow,
+              Text(
+                'Restaurantes Famosos',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
