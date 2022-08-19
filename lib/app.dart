@@ -51,7 +51,7 @@ class _DartFoodState extends State<DartFood> {
             ), //padding
 
             Container(
-              height: 120,
+              height: 150,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
@@ -59,7 +59,7 @@ class _DartFoodState extends State<DartFood> {
                 children: <Widget>[
                   Text(
                     'Categorias',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
                   SizedBox(
                     height: 12,
