@@ -30,8 +30,9 @@ class _DartFoodState extends State<DartFood> {
         ),
         body: ListView(
           children: <Widget>[
-            SizedBox(
-              height: 20,
+            Container(
+              height: 10,
+              color: Colors.yellow,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
