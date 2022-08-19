@@ -57,10 +57,6 @@ class _DartFoodState extends State<DartFood> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
-                    'Categorias',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
-                  ),
                   SizedBox(
                     height: 12,
                   ),
@@ -209,7 +205,7 @@ class _DartFoodState extends State<DartFood> {
                       'https://th.bing.com/th/id/R.bd34572e1cb5a2d70b49112ac482d438?rik=9NOQDM1fmrz4rA&riu=http%3a%2f%2fpasteldam.com.br%2fwp-content%2fuploads%2f2018%2f07%2fbanner-pratos.png&ehk=xJ9nICZktmoLcJT2ssPY%2b1fyM0nXcNp02iuIbSe0uAU%3d&risl=&pid=ImgRaw&r=0'),
                 ),
               ),
-            ), // PRESTA ATEN
+            ),
             Container(
               height: 10,
               color: Colors.grey.shade100,
