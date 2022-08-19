@@ -34,27 +34,6 @@ class _DartFoodState extends State<DartFood> {
               height: 20,
               color: Colors.yellow,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 12,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    'Ordenar         Para retirar         Entrega grátis',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w500, color: Colors.black54),
-                  ), //row
-                ],
-                //widget
-              ), //column
-            ),
-
-            Container(
-              height: 10,
-              color: Colors.grey.shade100,
-            ), //padding
 
             Container(
               height: 150,
