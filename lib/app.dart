@@ -20,8 +20,6 @@ class _DartFoodState extends State<DartFood> {
         appBar: AppBar(
           title: Text(
             'DartFood',
-            final String someText = "stuff for the 1st paragraph\n\n",
-            'Restaurantes  Bebidas  Pizzas  Saladas  Sobremesas',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w700,
