@@ -57,6 +57,10 @@ class _DartFoodState extends State<DartFood> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  Text(
+                    'Categorias',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                  ),
                   SizedBox(
                     height: 12,
                   ),
