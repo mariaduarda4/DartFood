@@ -19,7 +19,7 @@ class _DartFoodState extends State<DartFood> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Restaurantes  Bebidas  Pizzas  Saladas  Sobremesas',
+            'Restaurantes  Bebidas  Pizzas  Saladas',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
