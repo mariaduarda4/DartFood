@@ -33,6 +33,20 @@ class _DartFoodState extends State<DartFood> {
             Container(
               height: 50,
               color: Colors.red,
+              padding: EdgeInsets.only(top: 12, left: 12),
+              alignment: Alignment.topLeft,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'Restaurantes Bebidas Pizzas Saladas Sobremesas',
+                    style: TextStyle(fontSize: 13),
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
+                ],
+              ),
             ),
             Container(
               height: 50,
