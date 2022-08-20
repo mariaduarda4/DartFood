@@ -38,8 +38,8 @@ class _HomePageState extends State<HomePage> {
         },
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.compass),
-            label: 'Destaques',
+            icon: Icon(CupertinoIcons.home),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.bag),
