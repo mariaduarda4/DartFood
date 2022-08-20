@@ -41,7 +41,7 @@ class _DartFoodState extends State<DartFood> {
                 children: <Widget>[
                   Text(
                     'Ordenar        Para retirar        Entrega grátis',
-                    textAlign: TextAlign.center,
+                    
                     style: TextStyle(fontSize: 14),
                   ),
                   SizedBox(
