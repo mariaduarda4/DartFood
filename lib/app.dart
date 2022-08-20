@@ -32,7 +32,7 @@ class _DartFoodState extends State<DartFood> {
           children: <Widget>[
             Container(
               height: 50,
-              color: Colors.red,
+              color: Colors.black,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
@@ -40,7 +40,7 @@ class _DartFoodState extends State<DartFood> {
                 children: <Widget>[
                   Text(
                     'Restaurantes Bebidas Pizzas Saladas Sobremesas',
-                    style: TextStyle(fontSize: 16),
+                    style: TextStyle(color: Colors.white, fontSize: 14),
                   ),
                 ],
               ),
@@ -55,7 +55,7 @@ class _DartFoodState extends State<DartFood> {
                 children: <Widget>[
                   Text(
                     'Ordenar        Para retirar        Entrega grátis',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    style: TextStyle(fontSize: 14),
                   ),
                   SizedBox(
                     height: 12,
