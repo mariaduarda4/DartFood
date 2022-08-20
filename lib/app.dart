@@ -19,7 +19,7 @@ class _DartFoodState extends State<DartFood> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Restaurantes  Bebidas  Pizzas  Saladas',
+            'Dart Food',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -40,8 +40,8 @@ class _DartFoodState extends State<DartFood> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'Ordenar        Para retirar        Entrega grátis',
-                    style: TextStyle(fontSize: 14),
+                    'Restaurantes  Bebidas  Pizzas  Saladas Sobremesas',
+                    style: TextStyle(fontSize: 13),
                   ),
                   SizedBox(
                     height: 12,
