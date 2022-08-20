@@ -27,10 +27,10 @@ class _DartFoodState extends State<DartFood> {
             ),
           ),
           centerTitle: true,
-          backgroundColor: Colors.black,    
+          backgroundColor: Colors.black,
           leading: IconButton(
             alignment: Alignment.topLeft,
-            icon: Icon(Icons.notifications_none),
+            icon: Icon(CupertinoIcons.menu),
             onPressed: () {},
           ),
         ),
