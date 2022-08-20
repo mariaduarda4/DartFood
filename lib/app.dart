@@ -205,7 +205,7 @@ class _DartFoodState extends State<DartFood> {
               color: Colors.grey.shade100,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 12),
+              padding: const EdgeInsets.only(left: 14),
               child: Container(
                 height: 170,
                 decoration: BoxDecoration(
