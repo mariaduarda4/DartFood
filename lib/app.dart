@@ -511,6 +511,34 @@ class _DartFoodState extends State<DartFood> {
                             ]),
                       ],
                     ),
+                             Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: Image(
+                            width: 50,
+                            height: 50,
+                            image: NetworkImage(
+                                'https://abri.com.br/wp-content/uploads/2020/02/logo-cacau-show.jpg'),
+                          ),
+                        ),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                'Cacau Show Chocolates - Pátio shop.Arapiraca',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                ' Doces    35-40 min    RS 7,99    1,3 Km',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ]),
+                      ],
+                    ),
                   ],
                 ),
               ),
