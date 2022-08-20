@@ -33,7 +33,7 @@ class _DartFoodState extends State<DartFood> {
           children: <Widget>[
             Container(
               height: 50,
-              color: Colors.yellow,
+              color: Color(0xfff1e46d),
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
