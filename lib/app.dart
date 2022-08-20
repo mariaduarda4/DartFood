@@ -33,6 +33,7 @@ class _DartFoodState extends State<DartFood> {
             Container(
               height: 50,
               color: Colors.black,
+              padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
