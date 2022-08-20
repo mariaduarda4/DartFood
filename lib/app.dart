@@ -42,6 +42,7 @@ class _DartFoodState extends State<DartFood> {
                     'Restaurantes Bebidas Pizzas Saladas Sobremesas',
                     style: TextStyle(color: Colors.white, fontSize: 14),
                   ),
+                   centerTitle: true,
                 ],
               ),
             ),
