@@ -341,8 +341,8 @@ class _DartFoodState extends State<DartFood> {
                         Padding(
                           padding: const EdgeInsets.only(right: 8),
                           child: Image(
-                            width: 20,
-                            height: 20,
+                            width: 30,
+                            height: 30,
                             image: NetworkImage(
                                 'https://th.bing.com/th/id/R.9eb812a9905fb3523131e40943cf12b9?rik=cITxL62%2b33gAxQ&pid=ImgRaw&r=0'),
                           ),
