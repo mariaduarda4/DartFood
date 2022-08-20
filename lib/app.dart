@@ -36,10 +36,10 @@ class _DartFoodState extends State<DartFood> {
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    ' Restaurantes Bebidas Pizzas Saladas Sobremesas',
+                    ' Restaurantes  Bebidas  Pizzas  Saladas  Sobremesas',
                     style: TextStyle(color: Colors.white, fontSize: 14),
                   ),
                 ],
