@@ -344,7 +344,7 @@ class _DartFoodState extends State<DartFood> {
                             width: 30,
                             height: 30,
                             image: NetworkImage(
-                                'https://th.bing.com/th/id/R.9eb812a9905fb3523131e40943cf12b9?rik=cITxL62%2b33gAxQ&pid=ImgRaw&r=0'),
+                                'https://logospng.org/download/cacau-show/logo-cacau-show-1024.png'),
                           ),
                         ),
                         Column(
