@@ -344,7 +344,7 @@ class _DartFoodState extends State<DartFood> {
                             width: 20,
                             height: 20,
                             image: NetworkImage(
-                                'https://abri.com.br/wp-content/uploads/2020/02/logo-cacau-show.jpg'),
+                                'https://th.bing.com/th/id/R.9eb812a9905fb3523131e40943cf12b9?rik=cITxL62%2b33gAxQ&pid=ImgRaw&r=0'),
                           ),
                         ),
                         Column(
