@@ -42,9 +42,6 @@ class _DartFoodState extends State<DartFood> {
                     'Restaurantes Bebidas Pizzas Saladas Sobremesas',
                     style: TextStyle(fontSize: 13),
                   ),
-                  SizedBox(
-                    height: 12,
-                  ),
                 ],
               ),
             ),
