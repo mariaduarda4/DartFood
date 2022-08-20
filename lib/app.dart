@@ -344,7 +344,7 @@ class _DartFoodState extends State<DartFood> {
                             width: 30,
                             height: 30,
                             image: NetworkImage(
-                                'https://logospng.org/download/cacau-show/logo-cacau-show-1024.png'),
+                                'https://th.bing.com/th/id/R.9eb812a9905fb3523131e40943cf12b9?rik=cITxL62%2b33gAxQ&pid=ImgRaw&r=0'),
                           ),
                         ),
                         Column(
@@ -357,6 +357,34 @@ class _DartFoodState extends State<DartFood> {
                               ),
                               Text(
                                 ' Doces    35-40 min    RS 7,99    1,3 Km',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ]),
+                      ],
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: Image(
+                            width: 30,
+                            height: 30,
+                            image: NetworkImage(
+                                'https://th.bing.com/th/id/OIP.ttRZn0SG62JMuTq_V0yYTAAAAA?pid=ImgDet&rs=1'),
+                          ),
+                        ),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                'Severo Pizzaria - Rua Rosendo Lima',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                ' Pizzas    40-50 min    RS 7,99    1,3 Km',
                                 style: TextStyle(
                                   fontSize: 14,
                                 ),
