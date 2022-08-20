@@ -296,6 +296,83 @@ class _DartFoodState extends State<DartFood> {
               color: Colors.grey.shade100,
             ),
             Container(
+              width: double.maxFinite,
+              height: 200,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      'Nossos parceiros',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: Image(
+                            width: 50,
+                            height: 50,
+                            image: NetworkImage(
+                                'https://th.bing.com/th/id/R.c2e259f3bba2e3c11219c1cd3c611e7b?rik=QvPxZ4TXkP6Mwg&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2019%2f11%2fMcDonalds-logo.jpg&ehk=D79Gyta5MGQAbtmyxUdlyLJsvvszOaBYpcKpFQWlVSQ%3d&risl=&pid=ImgRaw&r=0'),
+                          ),
+                        ),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                'McDonalds - Pátio shop.Arapiraca',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                ' Lanches    42-52 min    RS 4,99    1,3 Km',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ]),
+                      ],
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: Image(
+                            width: 80,
+                            height: 80,
+                            image: NetworkImage(
+                                'https://abri.com.br/wp-content/uploads/2020/02/logo-cacau-show.jpg'),
+                          ),
+                        ),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                'Cacau Show - Pátio shop.Arapiraca',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                ' Doces    35-40 min    RS 7,99    1,3 Km',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ]),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: 10,
+              color: Colors.grey.shade100,
+            ), // GREY
+            Container(
               height: 140,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
@@ -303,7 +380,7 @@ class _DartFoodState extends State<DartFood> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'Nossos parceiros',
+                    'Lojas',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
                   SizedBox(
@@ -464,83 +541,6 @@ class _DartFoodState extends State<DartFood> {
                     ),
                   ),
                 ],
-              ),
-            ),
-            Container(
-              height: 10,
-              color: Colors.grey.shade100,
-            ),
-            Container(
-              width: double.maxFinite,
-              height: 200,
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      'Lojas',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: Image(
-                            width: 50,
-                            height: 50,
-                            image: NetworkImage(
-                                'https://th.bing.com/th/id/R.c2e259f3bba2e3c11219c1cd3c611e7b?rik=QvPxZ4TXkP6Mwg&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2019%2f11%2fMcDonalds-logo.jpg&ehk=D79Gyta5MGQAbtmyxUdlyLJsvvszOaBYpcKpFQWlVSQ%3d&risl=&pid=ImgRaw&r=0'),
-                          ),
-                        ),
-                        Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                'McDonalds - Pátio shop.Arapiraca',
-                                style: TextStyle(
-                                    fontSize: 16, fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                ' Lanches    42-52 min    RS 4,99    1,3 Km',
-                                style: TextStyle(
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ]),
-                      ],
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: Image(
-                            width: 80,
-                            height: 80,
-                            image: NetworkImage(
-                                'https://abri.com.br/wp-content/uploads/2020/02/logo-cacau-show.jpg'),
-                          ),
-                        ),
-                        Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                'Cacau Show - Pátio shop.Arapiraca',
-                                style: TextStyle(
-                                    fontSize: 16, fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                ' Doces    35-40 min    RS 7,99    1,3 Km',
-                                style: TextStyle(
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ]),
-                      ],
-                    ),
-                  ],
-                ),
               ),
             ),
           ], //widget
