@@ -30,43 +30,24 @@ class _DartFoodState extends State<DartFood> {
         ),
         body: ListView(
           children: <Widget>[
-            SizedBox(
-              height: 20,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 12,
-              ),
+            Container(
+              height: 10,
+              color: Colors.black,
+              padding: EdgeInsets.only(top: 12, left: 12),
+              alignment: Alignment.topLeft,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'ENTREGAR EM',
-                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w700, fontSize: 16),
+                    'Restaurantes Bebidas Pizzas Saladas Sobremesas',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
-                  Row(
-                    children: <Widget>[
-                      Text(
-                        'Primavera, 11',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                        ),
-                      ),
-                      Icon(
-                        Icons.keyboard_arrow_down,
-                        color: Colors.red,
-                      ),
-                    ], //<widget
-                  ), //row
-                ], //widget
-              ), //column
-            ), //padding
-            SizedBox(
-              height: 10,
+                  SizedBox(
+                    height: 12,
+                  ),
+                ],
+              ),
             ),
-        body: ListView(
-          children: <Widget>[
             Container(
               height: 50,
               color: Colors.yellow,
