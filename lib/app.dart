@@ -308,6 +308,9 @@ class _DartFoodState extends State<DartFood> {
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
+                    SizedBox(
+                      height: 7,
+                    ),
                     Row(
                       children: <Widget>[
                         Padding(
@@ -335,6 +338,9 @@ class _DartFoodState extends State<DartFood> {
                               ),
                             ]),
                       ],
+                    ),
+                    SizedBox(
+                      height: 7,
                     ),
                     Row(
                       children: <Widget>[
@@ -364,13 +370,16 @@ class _DartFoodState extends State<DartFood> {
                             ]),
                       ],
                     ),
+                    SizedBox(
+                      height: 7,
+                    ),
                     Row(
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.only(right: 8),
                           child: Image(
                             width: 30,
-                            height: 30,
+                            height: 40,
                             image: NetworkImage(
                                 'https://th.bing.com/th/id/OIP.ttRZn0SG62JMuTq_V0yYTAAAAA?pid=ImgDet&rs=1'),
                           ),
