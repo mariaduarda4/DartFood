@@ -23,6 +23,7 @@ class _DartFoodState extends State<DartFood> {
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
+              fontSize: 14,
             ),
           ),
           centerTitle: true,
