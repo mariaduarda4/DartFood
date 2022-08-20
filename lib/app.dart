@@ -39,7 +39,7 @@ class _DartFoodState extends State<DartFood> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'Restaurantes  Bebidas  Pizzas  Saladas Sobremesas',
+                    'Restaurantes  Bebidas  Pizzas  Saladas  Sobremesas',
                     style: TextStyle(fontSize: 13),
                   ),
                   SizedBox(
