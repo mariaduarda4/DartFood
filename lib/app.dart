@@ -481,7 +481,7 @@ class _DartFoodState extends State<DartFood> {
                     Text(
                       'Lojas',
                       style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                     Row(
                       children: <Widget>[
