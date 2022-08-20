@@ -472,7 +472,7 @@ class _DartFoodState extends State<DartFood> {
             ),
             Container(
               width: double.maxFinite,
-              height: 98,
+              height: 200,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -511,7 +511,7 @@ class _DartFoodState extends State<DartFood> {
                             ]),
                       ],
                     ),
-                             Row(
+                    Row(
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.only(right: 8),
