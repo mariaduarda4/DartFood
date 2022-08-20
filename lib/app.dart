@@ -63,7 +63,7 @@ class _DartFoodState extends State<DartFood> {
                 children: <Widget>[
                   Text(
                     'Categorias',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
                   SizedBox(
                     height: 12,
@@ -230,7 +230,7 @@ class _DartFoodState extends State<DartFood> {
                           height: 10,
                         ),
                         Text(
-                          'Confira sua entrega grátis na sacola',
+                          'Só no DartFood a entrega é grátis',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: Colors.black54),
@@ -255,7 +255,7 @@ class _DartFoodState extends State<DartFood> {
                           height: 10,
                         ),
                         Text(
-                          'A taxa é uma cortesia para você',
+                          'Aqui não temos taxa e respeitamos você',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: Colors.black54),
@@ -280,7 +280,7 @@ class _DartFoodState extends State<DartFood> {
                           height: 10,
                         ),
                         Text(
-                          'No Dart Food temos uma comida gostosa e sem taxas ',
+                          'Oferecemos o melhor atendimento e a comida mais gostosa da região ',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: Colors.black54),
@@ -303,7 +303,7 @@ class _DartFoodState extends State<DartFood> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'Restaurantes Famosos',
+                    'Nossos parceiros',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
                   SizedBox(
@@ -516,8 +516,8 @@ class _DartFoodState extends State<DartFood> {
                         Padding(
                           padding: const EdgeInsets.only(right: 8),
                           child: Image(
-                            width: 50,
-                            height: 50,
+                            width: 20,
+                            height: 70,
                             image: NetworkImage(
                                 'https://abri.com.br/wp-content/uploads/2020/02/logo-cacau-show.jpg'),
                           ),
