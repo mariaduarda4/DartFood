@@ -42,27 +42,6 @@ class _DartFoodState extends State<DartFood> {
                     'Restaurantes Bebidas Pizzas Saladas Sobremesas',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
-                  SizedBox(
-                    height: 12,
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              height: 50,
-              color: Colors.yellow,
-              padding: EdgeInsets.only(top: 12, left: 12),
-              alignment: Alignment.topLeft,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    'Ordenar        Para retirar        Entrega grátis',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                  ),
-                  SizedBox(
-                    height: 12,
-                  ),
                 ],
               ),
             ),
