@@ -341,8 +341,8 @@ class _DartFoodState extends State<DartFood> {
                         Padding(
                           padding: const EdgeInsets.only(right: 8),
                           child: Image(
-                            width: 80,
-                            height: 80,
+                            width: 20,
+                            height: 20,
                             image: NetworkImage(
                                 'https://abri.com.br/wp-content/uploads/2020/02/logo-cacau-show.jpg'),
                           ),
