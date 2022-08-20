@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/semantics.dart';
+import 'package:flutter/cupertino.dart';
 
 class DartFood extends StatefulWidget {
   const DartFood({Key? key}) : super(key: key);
@@ -29,7 +30,7 @@ class _DartFoodState extends State<DartFood> {
           backgroundColor: Colors.black,
           actions: [
             IconButton(
-              icon: Icon(Icons.notifications_none),
+              icon: Icon(Icons.notifications),
               onPressed: () {},
             ),
           ],
@@ -46,7 +47,7 @@ class _DartFoodState extends State<DartFood> {
                 children: <Widget>[
                   Text(
                     'Restaurantes  Bebidas  Pizzas  Saladas  Sobremesas',
-                    style: TextStyle(fontSize: 14),
+                    style: TextStyle(fontSize: 15),
                   ),
                   SizedBox(
                     height: 12,
