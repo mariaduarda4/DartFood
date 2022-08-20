@@ -19,7 +19,7 @@ class _DartFoodState extends State<DartFood> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Dart food',
+            'Restaurantes  Bebidas  Pizzas  Saladas  Sobremesas',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -30,21 +30,6 @@ class _DartFoodState extends State<DartFood> {
         ),
         body: ListView(
           children: <Widget>[
-            Container(
-              height: 50,
-              color: Colors.black,
-              padding: EdgeInsets.only(top: 12, left: 12),
-              alignment: Alignment.topLeft,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    ' Restaurantes  Bebidas  Pizzas  Saladas  Sobremesas',
-                    style: TextStyle(color: Colors.white, fontSize: 14),
-                  ),
-                ],
-              ),
-            ),
             Container(
               height: 50,
               color: Colors.yellow,
