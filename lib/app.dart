@@ -223,7 +223,7 @@ class _DartFoodState extends State<DartFood> {
                           child: Image(
                             image: NetworkImage(
                                 'https://th.bing.com/th/id/R.bd34572e1cb5a2d70b49112ac482d438?rik=9NOQDM1fmrz4rA&riu=http%3a%2f%2fpasteldam.com.br%2fwp-content%2fuploads%2f2018%2f07%2fbanner-pratos.png&ehk=xJ9nICZktmoLcJT2ssPY%2b1fyM0nXcNp02iuIbSe0uAU%3d&risl=&pid=ImgRaw&r=0'),
-                            height: 100,
+                            height: 120,
                           ),
                         ),
                         SizedBox(
@@ -248,7 +248,7 @@ class _DartFoodState extends State<DartFood> {
                           child: Image(
                             image: NetworkImage(
                                 'https://www.swift.com.br/arquivos/banner-desk-itensate20.jpg?v=637570253969930000'),
-                            height: 100,
+                            height: 120,
                           ),
                         ),
                         SizedBox(
@@ -273,7 +273,7 @@ class _DartFoodState extends State<DartFood> {
                           child: Image(
                             image: NetworkImage(
                                 'https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto,w_1200,h_630,d_es:cuisines:pizza-5.jpg/v1/es/restaurants/32955.jpg'),
-                            height: 100,
+                            height: 120,
                           ),
                         ),
                         SizedBox(
