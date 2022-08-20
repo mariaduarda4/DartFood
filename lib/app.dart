@@ -27,6 +27,12 @@ class _DartFoodState extends State<DartFood> {
           ),
           centerTitle: true,
           backgroundColor: Colors.black,
+          actions: [
+            IconButton(
+              icon: Icon(Icons.notifications_none),
+              onPressed: () {},
+            ),
+          ],
         ),
         body: ListView(
           children: <Widget>[
