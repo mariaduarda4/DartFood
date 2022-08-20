@@ -526,7 +526,7 @@ class _DartFoodState extends State<DartFood> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                'Cacau Show Chocolates - Pátio shop.Arapiraca',
+                                'Cacau Show - Pátio shop.Arapiraca',
                                 style: TextStyle(
                                     fontSize: 16, fontWeight: FontWeight.bold),
                               ),
