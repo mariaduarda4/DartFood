@@ -316,8 +316,8 @@ class _DartFoodState extends State<DartFood> {
                         Padding(
                           padding: const EdgeInsets.only(right: 8),
                           child: Image(
-                            width: 50,
-                            height: 50,
+                            width: 60,
+                            height: 60,
                             image: NetworkImage(
                                 'https://th.bing.com/th/id/R.c2e259f3bba2e3c11219c1cd3c611e7b?rik=QvPxZ4TXkP6Mwg&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2019%2f11%2fMcDonalds-logo.jpg&ehk=D79Gyta5MGQAbtmyxUdlyLJsvvszOaBYpcKpFQWlVSQ%3d&risl=&pid=ImgRaw&r=0'),
                           ),
