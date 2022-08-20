@@ -40,7 +40,7 @@ class _DartFoodState extends State<DartFood> {
                 children: <Widget>[
                   Text(
                     'Restaurantes Bebidas Pizzas Saladas Sobremesas',
-                    style: TextStyle(fontSize: 13),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
                 ],
               ),
