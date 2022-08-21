@@ -297,7 +297,7 @@ class _DartFoodState extends State<DartFood> {
             ),
             Container(
               width: double.maxFinite,
-              height: 250,
+              height: 230,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
