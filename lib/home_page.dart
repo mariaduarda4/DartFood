@@ -42,8 +42,8 @@ class _HomePageState extends State<HomePage> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.bag),
-            label: 'Pacotes',
+            icon: Icon(CupertinoIcons.search),
+            label: 'Buscar',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.person),
