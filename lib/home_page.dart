@@ -1,8 +1,10 @@
 import 'package:dartfood2/grid_pacotes.dart';
+import 'package:dartfood2/heloiza.dart';
 import 'package:dartfood2/temp_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dartfood2/app.dart';
+import 'package:dartfood2/perfil.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,8 +16,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int selectedIndex = 0;
   List pages = const [
+    DartFood1(),
     DartFood(),
-    GridPacotesPage(),
+    SearchAppBar(),
+    CadastroPage(),//ordem de telas para ser exibida em cada icone
+    TemporariaPage(),
     TemporariaPage(),
     TemporariaPage(),
   ];
@@ -39,7 +44,11 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.home),
-            label: 'Home',
+            label: 'Início',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.cart),
+            label: 'Menu',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.search),
