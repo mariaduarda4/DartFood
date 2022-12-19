@@ -50,7 +50,7 @@ class _DartFood2State extends State<DartFood2> {
                     Text(
                       'PIZZAS',
                       style:
-                      TextStyle(fontWeight: FontWeight.bold, fontSize: 30)
+                      TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
                     ),
                   ],
                 ),
