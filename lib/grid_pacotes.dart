@@ -1,3 +1,4 @@
+import 'package:dartfood/fritos.dart';
 import 'package:dartfood/kawandy.dart';
 import 'package:dartfood/sobremesas.dart';
 import 'package:dartfood/salada.dart';
@@ -88,7 +89,7 @@ class _DartFood1State extends State<DartFood1> {
             ),
 
             Container(
-              height: 240,
+              height: 260,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.center,
               child: Column(
@@ -224,15 +225,27 @@ class _DartFood1State extends State<DartFood1> {
                                 height: 160,
                               ),
                             ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            Text(
-                              'Fritos',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0x8a000000)),
-                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return const Fritos();
+                                    },
+                                  ),
+                                );
+                              },
+                              child: const Text(
+                                'Fritos',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0x8a000000)),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.grey.shade100),
+                            )
+
                           ],
                         ),
                         SizedBox(

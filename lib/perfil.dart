@@ -12,11 +12,11 @@ class _CadastroPageState extends State<CadastroPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 18, 30, 138),
+          backgroundColor: Color.fromARGB(255, 109, 29, 56),
           centerTitle: true,
           title: const Text(
-            'AstroApp',
-            style: TextStyle(color: Colors.white),
+            'Dartfood',
+            style: TextStyle(fontSize: 28, color: Colors.white),
           ),
         ),
         body: ListView(
@@ -65,12 +65,12 @@ class _CadastroPageState extends State<CadastroPage> {
                     child: const Text(
                       'CADASTRAR',
                       style: TextStyle(
-                        color: Colors.yellow,
+                        color: Colors.white,
                         fontSize: 16,
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.black,
+                      primary: Colors.pink[900],
                     ))
               ]),
             )

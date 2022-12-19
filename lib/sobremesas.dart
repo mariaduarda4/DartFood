@@ -29,19 +29,19 @@ class _SobremesasState extends State<Sobremesas> {
             ),
           ),
           centerTitle: true,
-          backgroundColor: Colors.black,
+          backgroundColor: Color(0xff6d1d38),
         ),
         body: ListView(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(left: 14),
+              padding: const EdgeInsets.only(left: 10),
               child: Container(
-                height: 220,
+                height: 250,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: ListView(
-                  padding: EdgeInsets.only(right: 12),
+                  padding: EdgeInsets.only(right: 10),
                   children: <Widget>[
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +51,7 @@ class _SobremesasState extends State<Sobremesas> {
                           child: Image(
                             image: NetworkImage(
                                 'https://pt.petitchef.com/imgupl/article/2468.jpg'),
-                            height: 200,
+                            height: 240,
                           ),
                         ),
                       ],
@@ -79,7 +79,7 @@ class _SobremesasState extends State<Sobremesas> {
             ),
             Container(
               width: double.maxFinite,
-              height: 380,
+              height: 570,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -184,7 +184,38 @@ class _SobremesasState extends State<Sobremesas> {
                       ],
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 7,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: Image(
+                            width: 80,
+                            height: 80,
+                            image: NetworkImage(
+                                'https://www.sabornamesa.com.br/media/k2/items/cache/dfa7f6322712614e6e049fc346875c0a_XL.jpg'),
+                          ),
+                        ),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                'Brownie',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                'RS 6,00',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                ),
+                              ),
+                            ]),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 6,
                     ),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(primary: Colors.white),

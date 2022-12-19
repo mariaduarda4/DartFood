@@ -1,19 +1,24 @@
+import 'package:dartfood/data/bd_helper.dart';
 import 'package:dartfood/home_page.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class LoginPage1 extends StatefulWidget {
+  const LoginPage1({Key? key}) : super(key: key);
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _LoginPage1State createState() => _LoginPage1State();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginPage1State extends State<LoginPage1> {
   String email = '';
   String senha = '';
 ////ccrriieeii  eass  ssttrriinnggss  vvaazziiaass  ee  qquuaannddoo  oo  uussauuarriioo  ddiiggiittaarr  nnoo  eemmaaiill  eellee  vvaaii  aaddiicciioonnaarr  aa  vvaarriiaavveelle  meamialil  ee  eeqquuaannddoo  ddiiggiittaarr  aa  sseennhhaa  aa  mmeessmmaa  ccooiissaa
   @override
   Widget build(BuildContext context) {
+
+    DBHelper().initDB();
+
+
     return Scaffold(
       body: SingleChildScrollView(
         child: SizedBox(

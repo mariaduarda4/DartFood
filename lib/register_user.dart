@@ -1,5 +1,5 @@
-import 'package:dartfood/user_dao.dart';
-import 'package:dartfood/user.dart';
+import 'package:dartfood/data/user_dao.dart';
+import 'package:dartfood/domain/user.dart';
 import 'package:dartfood/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -77,6 +77,7 @@ class _RegisterUserState extends State<RegisterUser> {
                   child: Text(
                     'Registrar Usuário',
                     style: TextStyle(
+                      color: Colors.white,
                       fontSize: 20,
                     ),
                   ),

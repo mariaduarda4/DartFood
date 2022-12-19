@@ -125,6 +125,7 @@ class _SearchAppBarState extends State<SearchAppBar> {
                                     'https://us.123rf.com/450wm/margouillat/margouillat1711/margouillat171100564/90112846-surtido-de-comida-r%C3%A1pida-comida-chatarra.jpg?ver=6'),
                                 //ESSA IMAGEM N TA FUNCIONANDO NO MEU PC MAS DEIXEI O LINK AQUI CASO VC QUEIRA USAR  'https://unsplash.com/s/photos/foodie'),
                                 height: 150,
+
                               ),
                             ),
                           ],

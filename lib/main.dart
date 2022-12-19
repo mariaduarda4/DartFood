@@ -5,6 +5,6 @@ import 'splash.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Splash(),
+    home: SplashPage(),
   ));
 }

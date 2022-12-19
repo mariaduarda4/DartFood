@@ -1,4 +1,4 @@
-class Dartfood {
+class PacoteTuristico {
   late final String imagem;
   late final String nome;
   late final String titulo;
@@ -12,7 +12,7 @@ class Dartfood {
   late final double precoAtual;
   late final double precoAntigo;
 
-  Dartfood({
+  PacoteTuristico({
     required this.validade,
     required this.cidade,
     required this.imagem,
@@ -27,7 +27,7 @@ class Dartfood {
     required this.precoAntigo,
   });
 
-  Dartfood.fromJson(Map<String, dynamic> json) {
+  PacoteTuristico.fromJson(Map<String, dynamic> json) {
     nome = json['head'];
     imagem = json['url_image'];
     cidade = json['city'];

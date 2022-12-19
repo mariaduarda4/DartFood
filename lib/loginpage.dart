@@ -1,7 +1,7 @@
-import 'package:dartfood/bd_helper.dart';
-//import 'package:dartfood/pacote_dao.dart';
-import 'package:dartfood/shared_pref_helper.dart';
-import 'package:dartfood/user_dao.dart';
+import 'package:dartfood/data/bd_helper.dart';
+import 'package:dartfood/data/pizza_dao.dart';
+import 'package:dartfood/data/shared_pref_helper.dart';
+import 'package:dartfood/data/user_dao.dart';
 import 'package:dartfood/home_page.dart';
 import 'package:dartfood/register_user.dart';
 import 'package:flutter/material.dart';
@@ -38,9 +38,19 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: 48),
-              const Placeholder(fallbackHeight: 150),
-              const SizedBox(height: 42),
+              SizedBox(
+                //width: 108,
+                //height: 108,
+                child: Image(
+                  // width: 400,
+                  // height: 400,
+                  image: NetworkImage(
+                      'https://i.pinimg.com/564x/7a/aa/ed/7aaaed388333afed9bb6718c319835de.jpg'),
+                ),
+              ),
+
+
+
               TextFormField(
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -77,7 +87,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: const Padding(
                   padding: EdgeInsets.symmetric(vertical: 12.0),
                   child: Text(
-                    'Entrar com a conta Hurb',
+                    'Entrar com a conta ',
                     style: TextStyle(
                       fontSize: 20,
                     ),
@@ -96,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
                     'Registrar Usuário',
                     style: TextStyle(
                       fontSize: 20,
-                      color: Color(0xFFE81F7C),
+                      color: Colors.white,
                     ),
                   ),
                 ),

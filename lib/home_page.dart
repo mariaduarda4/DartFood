@@ -1,10 +1,12 @@
-import 'package:dartfood/grid_pacotes.dart';
+
 import 'package:dartfood/heloiza.dart';
 import 'package:dartfood/temp_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dartfood/app.dart';
 import 'package:dartfood/perfil.dart';
+import 'package:dartfood/mais.dart';
+import 'package:dartfood/grid_pacotes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,15 +21,17 @@ class _HomePageState extends State<HomePage> {
     DartFood1(),
     DartFood(),
     SearchAppBar(),
-    CadastroPage(),//ordem de telas para ser exibida em cada icone
-    TemporariaPage(),
-    TemporariaPage(),
-    TemporariaPage(),
+    CadastroPage(),
+    DartFood4(),
+    //ordem de telas para ser exibida em cada icone
+
+
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Colors.grey,
       body: pages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(

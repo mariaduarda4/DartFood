@@ -1,24 +1,22 @@
-import 'package:dartfood/sorvete_foods.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/semantics.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:dartfood/home_page.dart';
-import 'package:dartfood/data/food_data.dart';
 
+import 'data/food_data.dart';
+import 'fritos_food.dart';
 
-class Sorvete extends StatefulWidget {
-  const Sorvete({Key? key}) : super(key: key);
+class Fritos extends StatefulWidget {
+  const Fritos({Key? key}) : super(key: key);
 
   @override
-  _SorveteState createState() => _SorveteState();
+  _FritosState createState() => _FritosState();
 }
 
-class _SorveteState extends State<Sorvete> {
-
-  List<Sorve> _sorvetes = sorvetes;
-
+class _FritosState extends State<Fritos> {
+  List<Fri> _fritos = fritos;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,45 +26,62 @@ class _SorveteState extends State<Sorvete> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Sorvetes',
+            'Dart Food',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 28,
               fontWeight: FontWeight.bold,
             ),
           ),
           centerTitle: true,
-          backgroundColor: Color(0xff6d1d38),
+          backgroundColor: Colors.black,
         ),
         body: ListView(
           children: <Widget>[
 
-
             Container(
               width: double.maxFinite,
-              height: 900,
+              height: 80,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'FRITOS',
+                      style:
+                      TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              width: double.maxFinite,
+              height: 800,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Opções de sorvete',
+                      'Opções de fritos',
                       style:
                       TextStyle(fontWeight: FontWeight.bold, fontSize: 23),
                     ),
                     SizedBox(
-                      height: 13,
+                      height: 5,
                     ),
                     Column(
-                      children: _sorvetes.map(_buildSorveteItems).toList(),
+                      children: _fritos.map(_buildFoodItems).toList(),
                     ),
 
                     SizedBox(
                       height: 5,
                     ),
 
-
+                    SizedBox(
+                      height: 5,
+                    ),
 
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(primary: Colors.white),
@@ -96,15 +111,15 @@ class _SorveteState extends State<Sorvete> {
       ),
     );
   }
-  Widget _buildSorveteItems(Sorve sorvetes){
+  Widget _buildFoodItems(Fri fritos){
     return Container(
       margin: EdgeInsets.only(bottom: 20),
-      child: SorveteFood(
-        id: sorvetes.id,
-        name: sorvetes.name,
-        image: sorvetes.image,
-        price: sorvetes.price,
-        restaurant: sorvetes.restaurant,
+      child: FritoFood(
+        id: fritos.id,
+        name: fritos.name,
+        image: fritos.image,
+        price: fritos.price,
+        restaurant: fritos.restaurant,
       ),
     );
   }

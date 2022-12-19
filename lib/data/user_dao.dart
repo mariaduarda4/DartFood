@@ -1,9 +1,17 @@
 
-import 'package:dartfood/bd_helper.dart';
-import 'package:dartfood/user.dart';
+import 'package:dartfood/data/bd_helper.dart';
+import 'package:dartfood/domain/user.dart';
 import 'package:sqflite/sqflite.dart';
 
 class UserDao {
+
+  salvarUser({required User user}) async {
+    DBHelper dbHelper = DBHelper();
+    Database db = await dbHelper.initDB();
+
+    await db.insert('USER', user.toJson());
+  }
+
 
   Future<bool> autenticar({required String user, required String password}) async {
     DBHelper dbHelper = DBHelper();
@@ -30,7 +38,5 @@ class UserDao {
 
     return lista;
   }
-
-  salvarUser({required User user}) {}
 
 }

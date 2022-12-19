@@ -11,9 +11,11 @@ import 'package:dartfood/helo1.dart';
 import 'package:dartfood/hamburguer.dart';
 import 'package:dartfood/sorvete.dart';
 import 'package:dartfood/padarias.dart';
+import 'package:dartfood/data/food_data.dart';
 
 class DartFood extends StatefulWidget {
-  const DartFood({Key? key}) : super(key: key);
+   const DartFood({Key? key}) : super(key: key);
+
 
   @override
   _DartFoodState createState() => _DartFoodState();
@@ -54,7 +56,7 @@ class _DartFoodState extends State<DartFood> {
               ),
             ),
             Container(
-              height: 160,
+              height: 180,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
@@ -79,7 +81,7 @@ class _DartFoodState extends State<DartFood> {
                               child: Image(
                                 image: NetworkImage(
                                     'https://i.pinimg.com/564x/cb/eb/1c/cbeb1cac15758729f436c836183d045d.jpg'),
-                                height: 70,
+                                height: 80,
                               ),
                             ),
                             SizedBox(
@@ -91,7 +93,7 @@ class _DartFoodState extends State<DartFood> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return const DartFood4();
+                                      return DartFood4();
                                     },
                                   ),
                                 );
@@ -119,7 +121,7 @@ class _DartFoodState extends State<DartFood> {
                               child: Image(
                                 image: NetworkImage(
                                     'https://i.pinimg.com/564x/a2/9f/70/a29f700d3dfd3fdd0e6bc38d5d918ece.jpg'),
-                                height: 70,
+                                height: 80,
                               ),
                             ),
                             SizedBox(
@@ -131,7 +133,7 @@ class _DartFoodState extends State<DartFood> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return const sorvete();
+                                      return  Sorvete();
                                     },
                                   ),
                                 );
@@ -159,7 +161,7 @@ class _DartFoodState extends State<DartFood> {
                               child: Image(
                                 image: NetworkImage(
                                     'https://as2.ftcdn.net/v2/jpg/02/18/21/49/1000_F_218214993_ryODGOnbUjEXHthAczBARkHShED8Dpru.jpg'),
-                                height: 70,
+                                height: 80,
                               ),
                             ),
                             SizedBox(
@@ -171,7 +173,7 @@ class _DartFoodState extends State<DartFood> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return const japonesa();
+                                      return  Japonesa();
                                     },
                                   ),
                                 );
@@ -195,7 +197,7 @@ class _DartFoodState extends State<DartFood> {
               ),
             ),
             Container(
-              height: 130,
+              height: 160,
               padding: EdgeInsets.only(top: 12, left: 12),
               alignment: Alignment.topLeft,
               child: Column(
@@ -213,7 +215,7 @@ class _DartFoodState extends State<DartFood> {
                               child: Image(
                                 image: NetworkImage(
                                     'https://i.pinimg.com/564x/bf/b5/2a/bfb52aaa8bef9c7f4dee7fd71b2768d2.jpg'),
-                                height: 70,
+                                height: 80,
                               ),
                             ),
                             SizedBox(
@@ -253,7 +255,7 @@ class _DartFoodState extends State<DartFood> {
                               child: Image(
                                 image: NetworkImage(
                                     'https://i.pinimg.com/564x/0f/7f/57/0f7f578e9964ae502e7233ab3da3af5b.jpg'),
-                                height: 70,
+                                height: 80,
                               ),
                             ),
                             SizedBox(
@@ -293,7 +295,7 @@ class _DartFoodState extends State<DartFood> {
                               child: Image(
                                 image: NetworkImage(
                                     'https://i.pinimg.com/564x/d6/75/fa/d675faa4f9c90439ee6f83e6f9c66cae.jpg'),
-                                height: 70,
+                                height: 80,
                               ),
                             ),
                             SizedBox(
@@ -407,14 +409,14 @@ class _DartFoodState extends State<DartFood> {
                           child: Image(
                             image: NetworkImage(
                                 'https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto,w_1200,h_630,d_es:cuisines:pizza-5.jpg/v1/es/restaurants/32955.jpg'),
-                            height: 120,
+                            height: 160,
                           ),
                         ),
                         SizedBox(
                           height: 10,
                         ),
                         Text(
-                          'Oferecemos o melhor atendimento e a comida mais gostosa da região ',
+                          'Oferecemos o melhor atendimento  ',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: Colors.black54),
@@ -431,7 +433,7 @@ class _DartFoodState extends State<DartFood> {
             ),
             Container(
               width: double.maxFinite,
-              height: 260,
+              height: 280,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -453,7 +455,7 @@ class _DartFoodState extends State<DartFood> {
                             width: 50,
                             height: 50,
                             image: NetworkImage(
-                                'https://www.mcdonalds.com.br/images/layout/mcdonalds-logo-bg-red.png'),
+                                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60RTuS4mpAsojzUv4riEaXymeBAGccgDEXyCTqQ_mvu5Hb_HR61uj-l77x_QhlZBuFhk&usqp=CAU'),
                           ),
                         ),
                         Column(
@@ -571,10 +573,14 @@ class _DartFoodState extends State<DartFood> {
                   ],
                 ),
               ),
-            ), // GREY
+            ),
+
+// GREY
           ], //widget
         ),
       ),
     );
   }
+
+
 }

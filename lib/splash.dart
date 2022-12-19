@@ -1,55 +1,58 @@
-import 'dart:async';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:dartfood/data/bd_helper.dart';
+import 'package:dartfood/data/shared_pref_helper.dart';
 import 'package:dartfood/home_page.dart';
-import 'package:dartfood/login_page.dart';
+import 'package:dartfood/loginpage.dart';
+import 'package:flutter/material.dart';
 
-class Splash extends StatefulWidget {
+class SplashPage extends StatefulWidget {
+  const SplashPage({Key? key}) : super(key: key);
+
   @override
-  _SplashState createState() => _SplashState();
+  State<SplashPage> createState() => _SplashPageState();
 }
-//queria que apos 3 segundos a outra tela fosse chamada e pra que isso acontecesse importei o dart async, e coloquei o metodo init state
 
-class _SplashState extends State<Splash> {
+class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+    loadData();
+  }
 
-    Timer(Duration(seconds: 3), () {
-      //coloquei uma ação que seria executada dps desse tempo, essa açao é passada em forma de função,a funçao é  que seja chamada a tela de login
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => LoginPage(),
-          ));
-    });
+  Future<void> loadData() async {
+    bool isLogged = await SharedPrefHelper().getUser();
+    await Future.delayed(const Duration(seconds: 5));
+    if(isLogged == true){
+      // Se logado, chamar HomePage
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) {
+            return const HomePage();
+          },
+        ),
+      );
+    } else {
+      // Chamar página de Login
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) {
+            return const LoginPage();
+          },
+        ),
+      );
+    }
+
+
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFCA2560),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Bem vindo ao DartFood!',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Color(0xffd02a5c),
-              ),
-            ),
-            SizedBox(
-              height: 5.0,
-            ),
-            CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation(Color(0xff6d1d38)),
-              strokeWidth: 11.0, //tamanho
-            ),
-          ],
-        ),
+        child: Image.network(
+            'https://i.pinimg.com/originals/44/40/17/44401729267c08a7add3aa47ba7d3789.jpg'),
       ),
     );
   }

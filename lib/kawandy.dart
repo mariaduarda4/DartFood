@@ -33,27 +33,7 @@ class _DartFood2State extends State<DartFood2> {
         ),
         body: ListView(
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(left: 0),
-              child: Container(
-                height: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: ListView(
-                  padding: EdgeInsets.only(right: 0),
-                  children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(8),
-                          child: Image(
-                            image: NetworkImage(
-                                'https://img.itdg.com.br/tdg/images/blog/uploads/2022/07/5-itens-necessarios-para-se-tornar-um-pizzaiolo-neste-Dia-da-Pizza.jpg?mode=crop&width={:width=%3E150,%20:height=%3E130}'),
-                          ),
-                        ),
-                      ],
+
                     ),
                   ],
                 ),
@@ -138,7 +118,7 @@ class _DartFood2State extends State<DartFood2> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                'Pizza de calabreza',
+                                'Pizza de calabresa',
                                 style: TextStyle(
                                     fontSize: 18, fontWeight: FontWeight.bold),
                               ),
